@@ -12,12 +12,12 @@ function App() {
       const response = await fetch(`https://fakestoreapi.com/products`, {
         method: "POST",
         body: JSON.stringify({
-          title: 'test product',
-          price: 13.5,
-          description: 'lorem ipsum set',
+          title: 'New Product',
+          price: 200,
+          description: 'This is new product.',
           image: 'https://i.pravatar.cc',
-          category: 'electronic'
-        })
+          category: 'clothing',
+        }),
       });
       const json = await response.json();
       return json;
